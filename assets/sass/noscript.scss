@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d16ced77aab140bbe4553be8d8dd581f970b00200586d2eab330003771129489
-size 526
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import 'libs/html-grid';
+
+/*
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Header */
+
+	body.is-preload {
+		#header {
+			.inner {
+				@include vendor('transform', 'none');
+				opacity: 1;
+
+				.actions {
+					@include vendor('transform', 'none');
+					opacity: 1;
+				}
+			}
+
+			&:after {
+				opacity: 0;
+			}
+		}
+	}
