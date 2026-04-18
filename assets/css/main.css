@@ -53,6 +53,7 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+	scroll-padding-top: 6.5rem;
 }
 
 mark {
@@ -270,6 +271,164 @@ input, select, textarea {
 		.container.max {
 			width: 100%;
 		}
+
+/* Custom Navigation */
+
+	#navbar {
+		background: rgba(255, 255, 255, 0.94);
+		box-shadow: 0 0.35rem 1.5rem rgba(31, 45, 61, 0.12);
+		left: 0;
+		position: sticky;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+
+		#navbar .nav-inner {
+			align-items: center;
+			display: flex;
+			gap: 1.25rem;
+			justify-content: space-between;
+			margin: 0 auto;
+			max-width: 75rem;
+			padding: 0.85rem 2rem;
+		}
+
+		#navbar a {
+			border-bottom: 0;
+			text-decoration: none;
+		}
+
+		#navbar .brand {
+			color: #2f4c5a;
+			font-size: 1rem;
+			font-weight: 600;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+
+		#navbar .nav-links {
+			align-items: center;
+			display: flex;
+			flex: 1;
+			flex-wrap: wrap;
+			gap: 0.55rem 1rem;
+			justify-content: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+			#navbar .nav-links a {
+				color: #466172;
+				font-size: 0.8rem;
+				font-weight: 600;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+			}
+
+		#navbar .nav-cta {
+			background: #25D366;
+			border-radius: 999px;
+			color: #ffffff;
+			font-size: 0.8rem;
+			font-weight: 700;
+			letter-spacing: 0.08em;
+			padding: 0.8rem 1.25rem;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+
+		#navbar .nav-cta:hover {
+			color: #ffffff;
+			background: #1ebe5c;
+		}
+
+/* Custom Sections */
+
+	.stacked-mobile {
+		flex-wrap: wrap;
+	}
+
+	.topic-grid {
+		align-items: stretch;
+	}
+
+	.topic-card {
+		background: rgba(255, 255, 255, 0.92);
+		border-radius: 1rem;
+		box-shadow: 0 1rem 2.5rem rgba(67, 97, 194, 0.08);
+		height: 100%;
+		padding: 2rem 1.75rem;
+		text-align: left;
+	}
+
+	.main.style2 .topic-card {
+		background: rgba(255, 255, 255, 0.1);
+		box-shadow: none;
+	}
+
+	.topic-section .image img,
+	.topic-section .image video,
+	.contact-video {
+		border-radius: 1rem;
+		display: block;
+		width: 100%;
+	}
+
+	.contact-video {
+		margin: 0 auto 2rem auto;
+		max-width: 28rem;
+	}
+
+	.topic-points {
+		list-style: disc;
+		margin: 0 0 2rem 1.25rem;
+		padding: 0;
+	}
+
+		.topic-points li {
+			margin-bottom: 0.65rem;
+		}
+
+	.testimonial-card {
+		text-align: center;
+	}
+
+	@media screen and (max-width: 980px) {
+
+		#navbar .nav-inner {
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 0.85rem 1.25rem;
+		}
+
+		#navbar .brand,
+		#navbar .nav-links,
+		#navbar .nav-cta {
+			flex-basis: 100%;
+			text-align: center;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#navbar .nav-links {
+			gap: 0.35rem 0.75rem;
+		}
+
+		#navbar .nav-links a,
+		#navbar .nav-cta {
+			font-size: 0.72rem;
+		}
+
+		.topic-card {
+			padding: 1.6rem 1.35rem;
+		}
+
+	}
 
 		@media screen and (max-width: 980px) {
 
