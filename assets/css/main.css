@@ -357,6 +357,12 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	#header .hero-intro {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
 	.hero-dashboard {
 		display: grid;
 		gap: 1rem;
