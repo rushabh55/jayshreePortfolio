@@ -511,6 +511,15 @@ input, select, textarea {
 		margin-bottom: 0.7rem;
 	}
 
+	.testimonial-video {
+		border-radius: 0.9rem;
+		display: block;
+		height: clamp(16rem, 42vw, 23rem);
+		margin: 0 auto 1.25rem auto;
+		object-fit: cover;
+		width: min(100%, 16rem);
+	}
+
 	@media screen and (max-width: 980px) {
 
 		#navbar .nav-inner {
@@ -550,6 +559,11 @@ input, select, textarea {
 
 		.topic-card {
 			padding: 1.6rem 1.35rem;
+		}
+
+		.testimonial-video {
+			height: clamp(15rem, 78vw, 20rem);
+			width: min(100%, 14rem);
 		}
 
 		.hero-dashboard {
